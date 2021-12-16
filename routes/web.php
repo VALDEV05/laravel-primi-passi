@@ -18,6 +18,6 @@ use Illuminate\Support\Facades\Route;
 }); */
 
 Route::get('/', function(){
-
-    return view(('home'));
+    $data= 'Hello World dinamically';
+    return view(('home'), compact('data'));
 });

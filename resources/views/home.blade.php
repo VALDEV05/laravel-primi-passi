@@ -28,7 +28,8 @@
 <body>
     <div class="content">
 
-        <h1 class="title">Hello world</h1>
+        <h1 class="title">Hello World</h1>
+        <h1 class="title">{{ $data }}</h1>
     </div>
 </body>
 </html>
