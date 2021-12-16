@@ -18,6 +18,11 @@ use Illuminate\Support\Facades\Route;
 }); */
 
 Route::get('/', function(){
-    $data= 'Hello World dinamically';
+    $data= 'Welcome to my first programmed page with laravel';
     return view(('home'), compact('data'));
+});
+
+Route::get('/about', function(){
+    $data= 'About Us';
+    return view(('about'), compact('data'));
 });
