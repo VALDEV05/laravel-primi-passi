@@ -10,7 +10,7 @@
     <style>
         body {
                 background-color: #fff;
-                color: #636b6f;
+                color: #ffffff;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 600;
                 height: 100vh;
@@ -18,7 +18,10 @@
         }
         
         .title {
-            font-size: 84px;
+            font-size: 75px;
+            margin-top: 100px;
+            background-color: rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
         }
         .content{
             text-align: center;
@@ -41,13 +44,16 @@
         .menu a:hover{
             border-bottom: 6px solid white;
         }
+        .active{
+            border-bottom:6px solid rgba(0, 0, 0, 0.4);
+        }
     </style>
     </head>
 <body>
     <div class="content">
         <div class="menu">
-            <a class="active" href="{{ url('/') }}">Home</a>
-            <a href="{{ url('about') }}">About Us</a>
+            <a href="{{ url('/') }}">Home</a>
+            <a class="active" href="{{ url('about') }}">About Us</a>
             <a href="{{ url('contacts') }}">Contacts</a>
         </div>
         <h1 class="title">{{ $data }}</h1>

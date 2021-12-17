@@ -28,26 +28,21 @@
         .title {
             font-size: 75px;
             margin-top: 100px;
-
+            background-color: rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
             }
         .jumbo{
             width: 100vw;
             height: 700px;
-            background-image: url(https://cdn.pixabay.com/photo/2014/11/16/15/15/field-533541_960_720.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position-y: center; 
         }
         .container{
             width: 900px;
             margin: auto;
-            background-color: violet;
             height: 100%;
         }
         .menu{
             height: 10%;
             width: 100%;
-            background-color: wheat;
             display: flex;
             align-items: center;
             justify-content: end;
@@ -59,7 +54,10 @@
             color: black;
         }
         .menu a:hover{
-            border-bottom: 6px solid white;
+            border-bottom: 6px solid rgba(0, 0, 0, 0.4);
+        }
+        .active {
+            border-bottom: 6px solid rgba(0, 0, 0, 0.4);
         }
     </style>
     </head>
@@ -75,6 +73,8 @@
                 <div class="title">
                     {{ $title }}
                 </div>
+                
+            
         </div>  
             
         </div>
