@@ -16,19 +16,21 @@
                 height: 100vh;
                 margin: 0;
         }
-        
+        .content {
+                text-align: center;
+                width: 900px;
+                margin: auto;
+                background-color: violet;
+                height: 100%;
+             }
+
         .title {
-            font-size: 84px;
-        }
-        .content{
-            text-align: center;
-            width: 900px;
-            margin: auto;
-            height: 100%;
-        }
+                font-size: 84px;
+            }
         .menu{
             height: 10%;
             width: 100%;
+            background-color: wheat;
             display: flex;
             align-items: center;
             justify-content: end;
@@ -46,9 +48,9 @@
 <body>
     <div class="content">
         <div class="menu">
-            <a class="active" href="{{ url('/') }}">Home</a>
-            <a href="{{ url('about') }}">About Us</a>
-            <a href="{{ url('contacts') }}">Contacts</a>
+                    <a class="active" href="{{ url('/') }}">Home</a>
+                    <a href="{{ url('about') }}">About Us</a>
+                    <a href="{{ url('contacts') }}">Contacts</a>
         </div>
         <h1 class="title">{{ $data }}</h1>
     </div>
